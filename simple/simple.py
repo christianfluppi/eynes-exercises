@@ -4,10 +4,7 @@ def simple_list():
     lista_de_diccionarios = []
     try:
         for i in range(1, 11):
-            diccionario = {
-                "id": i,
-                "age": random.randint(1, 100) 
-            }
+            diccionario = {"id": i, "age": random.randint(1, 100)}
             lista_de_diccionarios.append(diccionario)
         return lista_de_diccionarios
     except (OSError, IOError) as e:
