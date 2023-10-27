@@ -14,6 +14,7 @@ def simple_list():
         print(f"Error: {e}")
         exit(1)
 
+
 def sort_list(dicts):
     sorted_list = sorted(dicts, key=lambda x: x["age"])
     return sorted_list
