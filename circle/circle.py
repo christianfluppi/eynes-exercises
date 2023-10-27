@@ -19,3 +19,17 @@ class Circle():
 
     def get_area(self):
         return 3.14159 * self.radius ** 2
+    
+    
+    def get_perimeter(self):
+        return 2 * 3.14159 * self.radius
+
+    
+    def __mul__(self, n):
+        if n <= 0:
+            raise ValueError("El número de multiplicación debe ser un número positivo y mayor que cero.")
+        return Circle(self.radius * n)
+    
+    
+    def __str__(self):
+        return f"Círculo con radio: {self.radius}"
