@@ -7,8 +7,12 @@ def transpose(matrix):
     transpuesta = [[0 for _ in range(filas)] for _ in range(columnas)]
 
     #Calculo la matriz transpueta intercambiando fila por columnas
-    for i in range(filas):
-        for j in range(columnas):
-            transpuesta[j][i] = matrix[i][j]
-    
-    return transpuesta
+    try:
+        for i in range(filas):
+            for j in range(columnas):
+                transpuesta[j][i] = matrix[i][j]
+
+        return transpuesta
+    except (OSError, IOError) as e:
+        print(f"Error con el valor de la transpuesta: {e}")
+        exit(1)
