@@ -12,7 +12,7 @@ class Circle():
     def set_radius(self, radius):
         if radius <= 0: 
             raise ValueError(f"El radio del círculo debe ser mayor que 0 (cero) y positivo. Radio: {radius}")
-        self.radius = radius
+            self.radius = radius
 
     def get_area(self): return math.pi * self.radius ** 2
 
