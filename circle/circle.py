@@ -18,11 +18,11 @@ class Circle():
 
 
     def get_area(self):
-        return 3.14159 * self.radius ** 2
+        return math.pi * self.radius ** 2
     
     
     def get_perimeter(self):
-        return 2 * 3.14159 * self.radius
+        return 2 * math.pi * self.radius
 
     
     def __mul__(self, n):
