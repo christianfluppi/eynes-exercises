@@ -1,5 +1,6 @@
 import random
 
+
 def simple_list():
     lista_de_diccionarios = []
     try:
