@@ -10,5 +10,6 @@ def simple_list():
         lista_de_diccionarios.append(diccionario)
     return lista_de_diccionarios
 
-def sort_list():
-    pass
+def sort_list(dicts):
+    sorted_list = sorted(dicts, key=lambda x: x["age"])
+    return sorted_list
